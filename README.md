@@ -19,7 +19,7 @@ To link your account, use `/sentinel key <key>` and replace `<key>` with the API
 
 To unlink your account, use `/sentinel unlink`, which would unlink the account your currently on from the mod (pay attention, I said the mod not the Discord bot).
 
-To completely reset your config (as in erase all the tokens you have), use `/sentinel reset`.
+To completely reset your config (as in erase all your API keys), use `/sentinel reset`.
 
 Once configured, the mod will automatically acknowledge your login, meaning the Discord bot will not require you to acknowledge it.
 
