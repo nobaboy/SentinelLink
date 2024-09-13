@@ -113,7 +113,7 @@ class SentinelLink {
             }
 
             val uuid = mc.thePlayer.uniqueID.toString()
-            val token = Config.tokens[uuid]
+            val token = Config.tokens[uuid] ?: return@launch
             attemptAcknowledge(uuid, token)
         }
     }
