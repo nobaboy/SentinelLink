@@ -83,13 +83,14 @@ class SentinelLink {
 
     private fun getFirstUsageMessage(): String {
         return """
-            #§7§m-----------------§r§7[ §3Sentinel §7]§m-----------------
+            #§7§m-----------------§r§7[ §3Sentinel Link §7]§m-----------------
             # §bIt appears this is your first time using the mod.
-            # §bTo get an API key, head over to the Discord server and 
-            # §brun §3/newkey §bto receive a new key.
+            # §bTo get an API key, head over to the Discord server
+            # §band run §3/newkey §bto receive a new key.
             # §bThen in-game, use §3/sentinel key <key> §band paste the
-            # §bkey obtained from Discord, replacing §3<key> §bwith your actual key.
-            #§7§m---------------------------------------------------
+            # §bkey obtained from Discord, replacing §3<key> §bwith
+            # §byour actual key.
+            #§7§m-----------------------------------------------
         """.trimMargin("#")
     }
 

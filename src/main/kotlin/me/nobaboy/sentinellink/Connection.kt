@@ -7,8 +7,7 @@ import java.net.HttpURLConnection
 import java.net.URL
 
 object Connection {
-//    private const val HOST: String = "https://sentinel.celestialfault.dev/"
-    private const val HOST: String = "http://localhost:8888/"
+    private const val HOST: String = "https://sentinel.celestialfault.dev/"
 
     data class ResponseInfo(val responseCode: Int, val responseMessage: String)
 
