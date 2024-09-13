@@ -56,7 +56,7 @@ object Connection {
 
     private fun processResponse(responseInfo: ResponseInfo) {
         when (responseInfo.responseCode) {
-            200, 400, 401, 403, 404, 500 -> {
+            200, 400, 401, 404, 429, 500 -> {
                 SentinelLink.send(responseInfo.responseMessage)
             }
             else -> {
