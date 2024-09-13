@@ -31,6 +31,7 @@ object Connection {
             conn = url.openConnection() as HttpURLConnection
             conn.requestMethod = "POST"
             conn.setRequestProperty("Content-Type", "application/json")
+            conn.setRequestProperty("User-Agent", "Sentinel-Link/${SentinelLink.MOD_VERSION}")
             conn.doOutput = true
 
             conn.outputStream.writer().use {
@@ -61,6 +62,9 @@ object Connection {
             }
             else -> {
                 SentinelLink.send("Received invalid response code from server. Code: ${responseInfo.responseCode}")
+                SentinelLink.LOGGER.error(
+                    "Invalid response code from server (${responseInfo.responseCode}): ${responseInfo.responseMessage}"
+                )
             }
         }
     }

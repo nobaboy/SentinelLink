@@ -1,5 +1,3 @@
-@file:Suppress("unused")
-
 package me.nobaboy.sentinellink
 
 import kotlinx.coroutines.*
@@ -23,7 +21,7 @@ import kotlin.time.Duration.Companion.milliseconds
 @Mod(modid = "sentinellink", useMetadata = true, clientSideOnly = true)
 class SentinelLink {
     companion object {
-        private const val MOD_PREFIX = "§3§lSentinel > §b"
+        private const val MOD_PREFIX = "§9§lSentinel > §b"
         val MOD_VERSION: String by lazy {
             Loader.instance().activeModContainer().version
         }
@@ -83,7 +81,7 @@ class SentinelLink {
 
     private fun getFirstUsageMessage(): String {
         return """
-            #§7§m-----------------§r§7[ §3Sentinel Link §7]§m-----------------
+            #§7§m-----------------§r§7[ §9Sentinel Link §7]§m-----------------
             # §bIt appears this is your first time using the mod.
             # §bTo get an API key, head over to the Discord server
             # §band run §3/newkey §bto receive a new key.
