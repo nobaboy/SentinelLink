@@ -19,6 +19,6 @@ To completely reset your config (as in erase all the tokens you have), use `/sen
 
 Once configured, the mod will automatically acknowledge your login, meaning the Discord bot will not require you to acknowledge it.
 
-## Licene
+## License
 
 This mod is licensed under the [Unlicense](/LICENSE) (license copy present in this repository).
